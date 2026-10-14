@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopZone E-Commerce</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>ShopZone</h1>
+    <h3>Cart: <span id="cartCount">0</span></h3>
+  </header>
+
+  <main>
+    <h2>Explore Products</h2>
+
+    <div class="filters">
+      <input id="search" placeholder="Search products...">
+
+      <select id="category">
+        <option value="All">All Categories</option>
+        <option value="Electronics">Electronics</option>
+        <option value="Fashion">Fashion</option>
+        <option value="Home">Home</option>
+      </select>
+
+      <select id="sort">
+        <option value="default">Sort By</option>
+        <option value="low">Price: Low to High</option>
+        <option value="high">Price: High to Low</option>
+      </select>
+    </div>
+
+    <p id="message"></p>
+
+    <div id="productList" class="products"></div>
+
+    <section class="cart-section">
+      <h2>Shopping Cart</h2>
+      <div id="cartList"></div>
+      <h3>Total: ₹<span id="total">0</span></h3>
+      <button id="checkout">Checkout</button>
+    </section>
+  </main>
+
+  <script src="products.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
